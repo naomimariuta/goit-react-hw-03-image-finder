@@ -28,8 +28,8 @@ class App extends Component {
   }
 
   fetchImages = async (isNewQuery = false) => {
-    const { query, page, images } = this.state;
-    
+    const { query, page } = this.state;
+
     if (!query) {
       Notiflix.Notify.info('Please enter a search query!', {
         position: 'center-center',
